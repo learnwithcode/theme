@@ -1,0 +1,14 @@
+{
+  "name": "finance",
+  "version": "1.0.0",
+  "description": "Landing Page Theme for Finance company.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Abhiraj Pundir",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}

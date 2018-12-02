@@ -1,0 +1,109 @@
+.heading-primary{
+  color: $color-white;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  backface-visibility: hidden;
+  &--main{
+    display: block;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: 0.55rem;
+    animation: moveInLeft ease-in 2s;
+
+    @include respond(tab-port){
+      letter-spacing: .3rem;
+      font-size: 4rem;
+    }
+    @include respond(phone){
+      letter-spacing: .2rem;
+      font-size: 3rem;
+    }
+   
+  }
+  &--sub{ 
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.24rem;
+    animation: moveInRight ease-in 2s;
+    
+    @include respond(tab-port){
+      letter-spacing: .2rem;
+      font-size: 2rem;
+    }
+    @include respond(phone){
+      letter-spacing: 0;
+      font-size: 1.6rem;
+    }
+   
+   
+  }
+}
+
+.heading-secondary{
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  color: $color-black;
+  display: inline-block;
+  @include respond(tab-port){
+    letter-spacing: .2rem;
+    font-size: 3rem;
+  }
+
+    &:hover{
+      transform: skewY(-2deg) skewX(-15deg) scale(1.2);
+      text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
+      background-image: linear-gradient(
+        to right, 
+        $color-primary,  
+        $color-secondary);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+.heading-tertiary{
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+  // @include respond(tab-port){
+  //   font-weight: 400;
+  //   font-size: 1.4rem;
+  // }
+}
+
+.paragraph{
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: $color-grey;
+  // @include respond(tab-port){
+  //   font-weight: 400;
+  //   font-size: 1.6rem;
+  // }
+}
+
+.heading-dark{
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  color: $color-white;
+  display: inline-block;
+
+  
+  @include respond(tab-port){
+    letter-spacing: .2rem;
+    font-size: 3rem;
+  }
+
+    &:hover{
+      transform: skewY(-2deg) skewX(-15deg) scale(1.2);
+      text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
+      background-image: linear-gradient(
+        to right, 
+        $color-primary,  
+        $color-secondary);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
