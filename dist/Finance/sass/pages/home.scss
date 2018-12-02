@@ -1,0 +1,141 @@
+.section-feature{
+  background-color: $color-grey-light;
+  padding: 15rem 0 0 0;
+  margin-top: -5rem;
+  
+  @include respond(tab-port){
+    padding: 12rem 0 0 0;
+    margin-top: -8rem;
+  }
+}
+
+.section-about{
+  background-color: $color-grey-light;
+  padding: 8rem 0 0 0;
+  
+}
+
+.about{
+  margin-top: -8rem;
+  height: 50vh;
+  background-image: linear-gradient(
+    to right bottom, 
+    rgba($color-primary, 0.8),  
+    rgba($color-secondary, 0.8)), 
+    url(../img/work.jpeg);
+  background-size: cover;
+
+
+  @include respond(tab-land){
+    height: 35vh;
+  }
+
+  @include respond(tab-port){
+    height: 35vh;
+    
+  }
+
+  
+  @include respond(phone){
+    height: 30vh;
+  }
+  @include respond(mini){
+    height: 40vh;
+  }
+  }
+
+  .section-work{
+    background-color: $color-white;
+    padding: 10rem;
+    @include respond(tab-port){
+      padding: 8rem;
+    }
+  }
+
+  .section-skill{
+    padding: 10rem;
+    background-color: $color-white;
+    @include respond(tab-port){
+      padding: 8rem;
+    }
+  }
+  .section-team{
+    background-color: $color-white;
+    padding: 10rem 0;
+
+    @include respond(tab-port){
+      padding: 8rem 0;
+    }
+  }
+
+  .section-blog{
+    background-image: linear-gradient(
+      to right bottom, 
+      rgba($color-black, 0.8),  
+      rgba($color-black, 0.8)),  url(../img/skills-bg.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    @include respond(tab-land){
+      height: 85vh;
+    }
+
+    @include respond(tab-port){
+      height: 70vh;
+    }
+    @include respond(phone){
+      height: 400vh;
+    }
+
+    @include respond(mini){
+      height: 220vh;
+    }
+
+  
+
+  }
+
+  .blog{
+
+    &__date{
+      color: $color-white;
+      font-size: 1.4rem;
+    }
+
+    &__title{
+      color: $color-white;
+      font-size: 2rem;
+    }
+    &__button{
+      text-transform: uppercase;
+      font-size: $default-font-size;
+      font-weight: 700;
+      color: $color-secondary;
+      display: inline-block;
+      margin-right: 2rem;
+
+      &--icon{
+        height: 2rem;
+        width: 2rem;
+        fill: $color-secondary;
+      }
+      
+    }
+  }
+
+  .section-cta{
+    background-image: linear-gradient(
+      to right bottom, 
+      rgba($color-primary, 0.8),  
+      rgba($color-secondary, 0.8)),  url(../img/skills-bg.jpeg);
+    background-size: cover;
+    padding: 8rem;
+
+    @include respond(tab-port){
+      padding: 6rem;
+    }
+  }

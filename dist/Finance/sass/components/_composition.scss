@@ -1,0 +1,73 @@
+.composition{
+    width: 75% ;
+    margin: 0 auto;
+
+    @include respond(tab-port){
+    width: 85%;
+    margin: 0 auto;
+    }
+    @include respond(phone){
+      width: 90%;
+      margin: 0 auto;
+      }
+    
+  &__photo{
+    width: 100% ;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    border: solid $color-white 2rem;
+    border-radius: .2rem;
+    transition: all 0.2s;
+  
+
+    &:hover{
+      border: none;
+      box-shadow: 0 2.5rem 4rem rgba($color-black, .4);
+      outline: solid $color-secondary 2rem;
+      outline-offset: 2rem;
+      transform: scale(1);
+  
+      
+    }
+  }
+  
+ 
+}
+
+.row-work{
+  display: flex;
+  justify-content: center;
+
+  @include respond(phone){
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-box{
+    display: inline-block;
+    margin: 1rem auto;
+    flex: 0 0 27%;
+
+
+    &__img{
+      width: 100%;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+      transition: all 0.2s;
+      @include respond(phone){
+        width: 100%;
+      }
+      
+    &:hover{
+      border: none;
+      box-shadow: 0 2.5rem 4rem rgba($color-black, .4);
+      outline: solid $color-secondary 1rem;
+      outline-offset: 1rem;
+      transform: scale(1.1);
+  
+      
+    }
+    }
+
+
+  }
+
+}

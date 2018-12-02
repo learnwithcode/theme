@@ -1,0 +1,91 @@
+.row-team{
+  display: flex;
+  justify-content: center;
+
+  @include respond(phone){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 0 0 20%;
+  height: 40rem;                     
+  background-color: $color-white;
+  margin: 1rem;
+  padding: 4rem 1rem;
+  box-shadow: 0 2rem 5rem rgba($color-black, .06);
+  border-radius: .5rem;
+  position: relative;
+
+  @include respond(tab-land){
+    flex: 0 0 28%;
+  }
+ 
+
+
+
+
+  &__icon{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+    transition: all .5s ease-in;
+    backface-visibility: hidden;
+    opacity: 0;
+
+    &--logo{
+      width: 2rem;
+      height: 2rem;
+      margin: 2rem;
+      fill: $color-white;
+      &:hover{
+        fill: $color-secondary;
+        border-radius: 100%;
+        background-color: $color-white;
+        
+      }
+    }
+
+  }
+
+  &__img{
+    height: 15rem;
+    border-radius: 50%; 
+  }
+ 
+  &__post{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: $default-font-size;
+   
+  }
+  &__about{
+    text-align: center;
+    font-size: $default-font-size;
+    font-weight: 300;
+  
+    
+  }
+  &:hover{
+    background-image: linear-gradient(
+      to right bottom, 
+      $color-primary, 
+      $color-secondary);
+    color:transparent;
+  }
+ 
+  &:hover &__icon{
+    opacity: 1;
+    transform: translate(-50%, 100%);
+  }
+
+}
+
+

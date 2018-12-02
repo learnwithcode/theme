@@ -1,0 +1,45 @@
+.header{
+  height: 100vh;
+  background-image: linear-gradient(
+    to right bottom, 
+    rgba($color-primary, 0.8),  
+    rgba($color-secondary, 0.8)), 
+    url(../img/business_finance.jpeg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 50% 100%, 0% 92%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 50% 100%, 0% 92%);
+  position: relative;
+
+   
+
+  @include respond(mini){
+    height: 75vh;
+  } 
+
+  &__logo-box{
+    position: absolute;
+    top: 7rem;
+    left: 4rem; 
+
+    @include respond(tab-port){
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+    @include respond(phone){
+      top: 3.5rem;
+      right: 3.5rem;
+    }
+  }
+  &__logo{
+  height: 4rem;
+  }
+  &__text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
