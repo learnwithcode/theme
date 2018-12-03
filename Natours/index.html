@@ -10,6 +10,45 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
     <title>Natours | Exciting tours for adventurous people</title>
+    <style>
+        @font-face {
+          font-family: Lato;
+          src: url('font-lato/lato-regular-webfont.woff2') format('woff2'),
+            url('font-lato/lato-regular-webfont.woff') format('woff');
+          font-display: swap;
+        }
+    
+        @font-face {
+          font-family: Lato;
+          src: url('font-lato/lato-bold-webfont.woff2') format('woff2'),
+            url('font-lato/lato-bold-webfont.woff') format('woff');
+          font-weight: 100;
+          font-display: swap;
+        }
+    
+        @font-face {
+          font-family: Lato;
+          src: url('font-lato/lato-italic-webfont.woff2') format('woff2'),
+            url('font-lato/lato-italic-webfont.woff') format('woff');
+          font-style: italic;
+          font-display: swap;
+        }
+    
+        @font-face {
+          font-family: Lato;
+          src: url('font-lato/lato-bolditalic-webfont.woff2') format('woff2'),
+            url('font-lato/lato-bolditalic-webfont.woff') format('woff');
+          font-weight: 100;
+          font-style: italic;
+          font-display: swap;
+        }
+    
+        body {
+          font-family: Lato, sans-serif;
+          font-weight: 100;
+          font-style: normal;
+        }
+        </style>
 </head>
 
 <body>
@@ -35,7 +74,7 @@
 
     <header class="header">
         <div class="header__logo-box">
-            <img src="img/logo-white.png" alt="Logo" class="header__logo">
+            <img src="img/logo-white.webp" alt="Logo" class="header__logo">
         </div>
         <div class="header__text-box">
             <h1 class="heading-primary">
@@ -77,9 +116,9 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img data-src="img/nat-1.jpg" alt="Image" class="composition__photo composition__photo--p1 lazyload">
-                        <img data-src="img/nat-2.jpg" alt="Image" class="composition__photo composition__photo--p2 lazyload">
-                        <img data-src="img/nat-3.jpg" alt="Image" class="composition__photo composition__photo--p3 lazyload">
+                        <img src="img/nat-1-large.webp" alt="Image" class="composition__photo composition__photo--p1 ">
+                        <img src="img/nat-2-large.webp" alt="Image" class="composition__photo composition__photo--p2 ">
+                        <img src="img/nat-3-large.webp" alt="Image" class="composition__photo composition__photo--p3 ">
                     </div>
                 </div>
             </div>
@@ -263,7 +302,7 @@
             <div class="row">
                 <div class="story">
                     <figure class="story__shape">
-                        <img data-src="img/nat-8.jpg" alt="people image" class="story__image lazyload">
+                        <img src="img/nat-8-large.webp" alt="people image" class="story__image ">
                         <figcaption class="story__caption">Mary Smith</figcaption>
                     </figure>
                     <div class="story__text">
@@ -282,7 +321,7 @@
             <div class="row">
                 <div class="story">
                     <figure class="story__shape">
-                        <img data-src="img/nat-9.jpg" alt="people image" class="story__image lazyload">
+                        <img src="img/nat-9-large.webp" alt="people image" class="story__image ">
                         <figcaption class="story__caption">Jack Wilson</figcaption>
                     </figure>
                     <div class="story__text">
@@ -356,8 +395,8 @@
         <div class="footer__logo-box">
 
             <picture class="footer__logo">
-                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
-                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+                <source srcset="img/logo-green-small-1x.webp 1x, img/logo-green-small-2x.webp 2x" media="(max-width: 37.5em)">
+                <img srcset="img/logo-green-1x.webp 1x, img/logo-green-2x.webp 2x" alt="Full logo" src="img/logo-green-2x.webp">
             </picture>
 
 
@@ -456,7 +495,6 @@
         </div>
     </section> -->
 
-    <script src="js/lazysizes.min.js" async></script>
 </body>
 
 </html>

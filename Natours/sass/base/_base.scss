@@ -1,4 +1,4 @@
-//@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
 *,
 ::after,
 ::before{
@@ -24,21 +24,9 @@ html {
   }
 }
 
-@font-face {
-    font-family: 'Lato';
-    
-    src: url('webfont.eot'); /* IE9 Compat Modes */
-    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-         url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-    font-display: swap;
-  }
+
 
 body{
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
   line-height: 1.7;
   color: $color-dark-grey;
   padding: 3rem;

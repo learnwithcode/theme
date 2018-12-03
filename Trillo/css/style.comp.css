@@ -27,9 +27,7 @@ html {
       font-size: 50%; } }
 
 body {
-  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
-  font-weight: 400;
   color: var(--color-grey-dark-2);
   box-sizing: border-box;
   min-height: 100vh;
