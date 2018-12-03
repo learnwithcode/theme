@@ -22,7 +22,7 @@
     to right bottom, 
     rgba($color-primary, 0.8),  
     rgba($color-secondary, 0.8)), 
-    url(../img/work.jpeg);
+    url(../img/work.webp);
   background-size: cover;
 
 
@@ -72,7 +72,7 @@
     background-image: linear-gradient(
       to right bottom, 
       rgba($color-black, 0.8),  
-      rgba($color-black, 0.8)),  url(../img/skills-bg.jpeg);
+      rgba($color-black, 0.8)),  url(../img/skills-bg.webp);
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -131,7 +131,7 @@
     background-image: linear-gradient(
       to right bottom, 
       rgba($color-primary, 0.8),  
-      rgba($color-secondary, 0.8)),  url(../img/skills-bg.jpeg);
+      rgba($color-secondary, 0.8)),  url(../img/skills-bg.webp);
     background-size: cover;
     padding: 8rem;
 
