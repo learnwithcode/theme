@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -8,6 +25,18 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 25.93em) {
+    html {
+      font-size: 37.5%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -38,6 +67,11 @@ body {
   background-color: #fff;
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 40.1em) {
+    .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
 
 .card {
   height: 50rem;
@@ -48,6 +82,16 @@ body {
   box-shadow: 0 2rem 4rem rgba(20, 20, 20, 0.2);
   transition: all .2s;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .card {
+      margin: 1.5rem;
+      flex: 0 0 40%; } }
+  @media only screen and (max-width: 56.25em) {
+    .card {
+      flex: 1 0 35%; } }
+  @media only screen and (max-width: 56.25em) {
+    .card {
+      flex: 0 0 35%; } }
   .card:hover {
     transform: translateY(-1.5rem) scale(1.03); }
   .card__picture {

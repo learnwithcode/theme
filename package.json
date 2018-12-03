@@ -1,9 +1,13 @@
 {
   "name": "themes",
   "version": "1.0.0",
-  "description": "Portfolio Collection for client proposal",
-  "homepage": "https://learnwithcode.github.io/theme",
+  "description": "landing themes",
   "main": "index.js",
+  "homepage": "https://learnwithcode.github.io/theme",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gh-pages -d dist"
@@ -16,8 +20,5 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/learnwithcode/theme/issues"
-  },
-  "dependencies": {
-    "gh-pages": "^2.0.1"
   }
 }

@@ -23,6 +23,12 @@
   background-color: $color-white;
   display: flex;
   justify-content: center;
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
 }
 .card{
   height: 50rem;
@@ -33,6 +39,17 @@
   box-shadow: 0 2rem 4rem rgba($color-black, .2);
   transition: all .2s;
   position: relative;
+
+  @include respond(tab-land) {
+    margin: 1.5rem;
+    flex: 0 0 40%;
+}
+@include respond(tab-port) {
+    flex: 1 0 35%;
+}
+@include respond(tab-port) {
+    flex: 0 0 35%;
+}
 
   &:hover{
     transform: translateY(-1.5rem) scale(1.03);
