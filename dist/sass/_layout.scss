@@ -1,15 +1,15 @@
 .header{
-    padding: 3rem 0;
+    padding: 1rem 0;
     background-color: $color-primary;
 
 }
 .heading-primary{
     color: $color-white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
-    letter-spacing: .5rem;
+    letter-spacing: .2rem;
 }
 .heading-secondary{
     color: $color-white;
@@ -143,22 +143,22 @@
 }
 
 .footer{
-    padding: 3rem 0;
+    padding: 1rem 0;
     background-color: $color-primary;
     display: flex;  
     justify-content: space-around;
 
     &-terms{
         width:  30%;
-        font-size: 1.4;
-        font-weight: 300;
+        font-size: 1.6;
+        font-weight: 400;
         color: $color-white;
         text-transform: uppercase;
         text-align: center;
     }
     &-copy{
-        font-weight: 400;
-        font-size: 1.6rem;
+        font-weight: 300;
+        font-size: 1.4rem;
         color: $color-white;
         text-transform: uppercase;
     }

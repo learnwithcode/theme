@@ -43,16 +43,16 @@ body {
   box-sizing: border-box; }
 
 .header {
-  padding: 3rem 0;
-  background-color: #F65A90; }
+  padding: 1rem 0;
+  background-color: #8447ff; }
 
 .heading-primary {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
-  letter-spacing: .5rem; }
+  letter-spacing: .2rem; }
 
 .heading-secondary {
   color: #fff;
@@ -120,14 +120,14 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(246, 90, 144, 0.85), rgba(246, 90, 144, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(132, 71, 255, 0.85), rgba(132, 71, 255, 0.85)); }
   .card__details {
     padding: 3rem;
     text-align: center; }
 
 .btn {
   text-transform: uppercase;
-  background-color: #F65A90;
+  background-color: #8447ff;
   padding: 1.5rem 4rem;
   font-size: 2rem;
   color: #fff;
@@ -135,19 +135,19 @@ body {
   font-weight: 400; }
 
 .footer {
-  padding: 3rem 0;
-  background-color: #F65A90;
+  padding: 1rem 0;
+  background-color: #8447ff;
   display: flex;
   justify-content: space-around; }
   .footer-terms {
     width: 30%;
-    font-size: 1.4;
-    font-weight: 300;
+    font-size: 1.6;
+    font-weight: 400;
     color: #fff;
     text-transform: uppercase;
     text-align: center; }
   .footer-copy {
-    font-weight: 400;
-    font-size: 1.6rem;
+    font-weight: 300;
+    font-size: 1.4rem;
     color: #fff;
     text-transform: uppercase; }
